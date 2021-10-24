@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Rubik";
+  box-sizing: border-box;
+  line-height: 1;
+  background-color: #e2e8f0;
+}
+aside,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+main.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  max-width: 1520px;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  color: #3E64FF;
+  margin-bottom: 1rem;
+}
+aside {
+  transition: 300ms;
+  position: fixed;
+  padding-top: 30px;
+  height: 100%;
+  background-color: #1B262C;
+  color: #3E64FF;
+  padding: 30px;
+  width: 15%;
+  z-index: 1;
+}
+.logo {
+  margin: 0 auto;
+  width: 100%;
+}
+aside .side-menu {
+  position: relative;
+  margin-top: 100px;
+}
+h2 {
+  font-size: 1.1rem;
+  line-height: 1.1;
+  margin-left: 25px;
+  align-self: center;
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  aside .side-menu {
+      right: 0;
+      left: 0;
+      margin-left: 0;
+  }
+}
+.burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #3E64FF;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.side-menu.side-active {
+  transform: translateX(0%);
+}
+.aside-active {
+  width: 100%;
+}
+.burger.toggle div {
+  background-color: #1B262C;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.btn {
+  background: #0fe430;
+  color: white;
+  padding: 10px 30px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+section {
+  transition: 300ms;
+  margin-left: 45%;
+  padding-left: 50px;
+  margin-right: 90px;
+  padding-top: 20px;
+  background-color: #e2e8f0;
+}
+@media (max-width: 480px) {
+  section {
+      padding-left: 0;
+  }
+}
+section .username {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+section .username h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 10px;
+  color: #3E64FF;
+}
+section .username .avatar {
+  width: 50px;
+  height: 50px;
+}
+section .username .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+section .reservation table {
+  border-collapse: separate;
+  margin-top: 10px;
+  margin-left: 5%;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0 8px;
+  border-radius: 8px;
+}
+section .reservation table .headtable {
+  background-color: #3E64FF;
+  height: 70px;
+}
+section .reservation table .rtable {
+  background-color: #fff;
+  height: 70px;
+}
+section .reservation table th {
+  color: #1B262C;
+}
+section .reservation table th,
+section .reservation table td {
+  font-weight: 500;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+section .reservation table th a,
+section .reservation table td a {
+  display: block;
+}
+@media (max-width: 480px) {
+  section .reservation table tr:not(:first-child) td {
+      padding: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  section .reservation table tr:not(:first-child) td:last-child {
+      display: none;
+  }
+}
+section .products table th {
+  color: #3E64FF;
+}
+section .reservation table tr:not(:first-child) td:last-child {
+  background: #3E64FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 70px;
+}
+section .reservation table th:first-child,
+section .reservation table td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+section .reservation table th:last-child,
+section .reservation table td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media (max-width: 480px) {
+  section .reservation table th:nth-child(2),
+  section .reservation table td:nth-child(2) {
+      display: none;
+  }
+}
+@media (max-width: 480px) {
+  section .reservation table th:nth-child(3),
+  section .reservation table td:nth-child(3) {
+      display: none;
+  }
+}
+@media (max-width: 480px) {
+  section .reservation table th:nth-child(6),
+  section .reservation table td:nth-child(6) {
+      display: none;
+  }
+}
+@media (max-width: 480px) {
+  section .reservation table th:nth-child(7),
+  section .reservation table td:nth-child(7) {
+      display: none;
+  }
+}
+@media (max-width: 480px) {
+  section .reservation table th:nth-child(8),
+  section .reservation table td:nth-child(8) {
+      display: none;
+  }
+}
+section .reservation table th:nth-last-child(2)>div,
+section .reservation table td:nth-last-child(2)>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section .reservation table th:last-child,
+section .reservation table td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media screen and (max-width: 480px) {
+  body {
+      overflow-x: hidden;
+  }
+  aside {
+      width: 0%;
+      padding: 0;
+  }
+  .sidebar .logo {
+      visibility: hidden;
+  }
+  .side-menu {
+      position: fixed;
+      overflow: hidden;
+      height: 100vh;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-out;
+  }
+  .burger {
+      display: block;
+      cursor: pointer;
+      color: white;
+  }
+}

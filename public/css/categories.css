@@ -1,0 +1,68 @@
+
+body {
+ 
+  box-sizing: border-box;
+
+  background-color: #e2e8f0;
+}
+section .reservation table {
+  border-collapse: separate;
+  margin-top: 10px;
+  margin-left: 5%;
+  width: 100%;
+  text-align: center;
+  border-spacing: 0 8px;
+  border-radius: 8px;
+}
+section .reservation table .headtable {
+  background-color: #3E64FF;
+  height: 70px;
+}
+section .reservation table .rtable {
+  background-color: #fff;
+  height: 70px;
+}
+section .reservation table th {
+  color: #1B262C;
+}
+section .reservation table th,
+section .reservation table td {
+  font-weight: 500;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+section .reservation table th a,
+section .reservation table td a {
+  display: block;
+}
+@media (max-width: 480px) {
+  section .reservation table tr:not(:first-child) td {
+      padding: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  section .reservation table tr:not(:first-child) td:last-child {
+      display: none;
+  }
+}
+section .products table th {
+  color: #3E64FF;
+}
+section .reservation table tr:not(:first-child) td:last-child {
+  background: #3E64FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 70px;
+}
+section .reservation table th:first-child,
+section .reservation table td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+section .reservation table th:last-child,
+section .reservation table td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

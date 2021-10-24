@@ -1,0 +1,30 @@
+
+footer {
+  margin-top: 40px;
+  background: #1B262C;
+  overflow-x: hidden;
+  padding: 8vmin 18vmin;
+}
+
+footer p > span {
+  color: #77ACF1;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  width: 40px;
+  height: 35px;
+  background: #77ACF1;
+  border: none;
+}
+
+footer .column i {
+  color: #77ACF1;
+}
