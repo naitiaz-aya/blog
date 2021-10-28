@@ -108,7 +108,7 @@
                                 <a class="nav-link ms-auto" href="{{ url('/adminprofile') }}"><i class='bx bx-face'></i> Hi, {{Auth::user()->fname}}</a>
                                   @endif
                                 @endauth
-                            </li>>
+                            </li>
 							@guest
 							@if (Route::has('login'))
 							<li class="nav-item">

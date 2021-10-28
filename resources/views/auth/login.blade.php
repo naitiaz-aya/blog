@@ -34,7 +34,7 @@
             <div class="container-fluid p-0">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="#">
-                        Simple</a>
+                        Sample</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-right text-light"></i>
                     </button>
@@ -50,9 +50,7 @@
                            
                         </ul>
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <a class="nav-link ms-auto" href=""><i class='bx bx-face'></i> </a>
-                            </li>
+                            
                             @guest
                             @if (Route::has('login'))
                             <li class="nav-item">
@@ -106,7 +104,7 @@
         <main>
             <div class="contaner">
                 <div class="box">
-                    <h1>Register</h1>
+                    <h1>Login</h1>
                     <form action="{{ route('login') }}" method="post">
                         @csrf
                         <div class="user">

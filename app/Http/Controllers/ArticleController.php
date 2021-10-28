@@ -26,9 +26,15 @@ class ArticleController extends Controller
 			$articles = Article::where('id_sub',$usersub[0]->type_sub)->get();
 
 		$categories = Category::all();
+		if($articles){
+		return view('articles.index', ['articles' => $articles, 'categories' => $categories]);
+		}else{
+			
+				return redirect('/home');
+
+		}
 		// var_dump($usersub[0]->type_sub);
 		// var_dump($articles);
-		return view('articles.index', ['articles' => $articles, 'categories' => $categories]);
 	}
 
 

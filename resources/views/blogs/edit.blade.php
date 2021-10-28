@@ -22,7 +22,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
-    <!-- <link href="{{ asset('css/create.css') }}" rel="stylesheet"> -->
+    <link href="{{ asset('css/create.css') }}" rel="stylesheet">
 
 </head>
 
@@ -143,6 +143,7 @@
           </header>
 
           <div class="container">
+          <div class="registration-form">
             <form action="{{route('updateBlog', ['id' => $blog->id])}}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
                     <input type="hidden" name="_method" value="PUT">
@@ -151,7 +152,7 @@
                 <div class="col">
                 <div class="form-group m-2">
                   <label for="title">Title</label>
-                  <input type="text" class="form-control" placeholder="Your Blog Here" name="title" id="title">
+                  <input type="text" class="form-control item" placeholder="Your Blog Here" name="title" id="title">
                 </div>
                 </div>
               </div>
@@ -159,22 +160,23 @@
                 <div class="col m-2">
                     <div class="form-group">
                     <label for="body">Body</label>
-                    <textarea type="text" class="form-control" placeholder="Your Blog Here" name="body" id="title"></textarea>
+                    <textarea type="text" class="form-control item" placeholder="Your Blog Here" name="body" id="title"></textarea>
                     </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col m-2">
-                    <div class="form-group">
+                    <div class="form-group item">
                     <label for="file-input">Select your files</label>
-                    <input id="file-input" type="file" name="image" />
+                    <input id="file-input" class="form-control item" type="file" name="image" />
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn btn-dark justify-content-center">
+              <button type="submit" class="btn btn-block create-account justify-content-center">
                 Save
               </button>
             </form>
+          </div>
           </div>
 
           <footer>

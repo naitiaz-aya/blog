@@ -161,7 +161,7 @@
                   <!-- END profile-header-img -->
                   <!-- BEGIN profile-header-info -->
                   <div class="profile-header-info">
-                    <h4 class="m-t-10 m-b-5"></h4>
+                  <h4 class="m-t-10 m-b-5">{{ Auth::user()->fname }} {{ Auth::user()->lname }}</h4>
                     <p class="m-b-10"><i class='bx bxs-city' style='color:#ffffff'  ></i> {{ Auth::user()->country }}</p>
                     <p class="m-b-10"><i class='bx bx-user' style='color:#ffffff'  ></i> {{ Auth::user()->gender }}</p>
                     <p class="m-b-10"><i class='bx bxs-business' style='color:#ffffff'  ></i> {{ Auth::user()->job }}</p>
@@ -175,7 +175,7 @@
                 <ul class="profile-header-tab nav nav-tabs">
                   <li class="nav-item"><a href="#profile-post" class="nav-link active show" data-toggle="tab">POSTS</a></li>
                   
-                </ul>{{ Auth::user()->fname }} {{ Auth::user()->lname }}
+                </ul>
                 <!-- END profile-header-tab -->
               </div>
             </div>
